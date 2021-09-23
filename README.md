@@ -17,7 +17,7 @@ update @ 2021/09/23
 		
 	- at KEIL output file , file name is APROM_application , under \obj folder , which mapping to generateChecksum.cmd , generateCRCbinary.cmd , generateCRChex.cmd
 	
-	modify the file name in KEIL project , also need to modify these 3 generate***.cmd
+	modify the file name in KEIL project , also need to modify the file name in these 3 generate***.cmd
 
 ![image](https://github.com/released/M480BSP_ISP_UART_APROM/blob/main/APROM_KEIL_output_file.jpg)
 
