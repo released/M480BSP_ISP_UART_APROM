@@ -1,6 +1,27 @@
 # M480BSP_ISP_UART_APROM
  M480BSP_ISP_UART_APROM
 
+update @ 2021/09/23
+
+1. under Application code project : AP
+
+	- add binary to hex , by SRecord tool 
+	
+	- under generateChecksum.bat will execute generateChecksum.cmd , generateCRCbinary.cmd , generateCRChex.cmd
+	
+		- generateChecksum.cmd : calculate checksum by load the original binary file , and display on KEIL project
+		
+		- generateCRCbinary.cmd : calculate checksum by load the original binary file , and fill 0xFF , range up to 0x1D000
+		
+		- generateCRChex.cmd : conver binary file into hex file
+		
+	- at KEIL output file , file name is APROM_application , under \obj folder , which mapping to generateChecksum.cmd , generateCRCbinary.cmd , generateCRChex.cmd
+	
+	modify the file name in KEIL project , also need to modify these 3 generate***.cmd
+
+![image](https://github.com/released/M480BSP_ISP_UART_APROM/blob/main/APROM_KEIL_output_file.jpg)
+
+
 update @ 2021/09/22
 
 1. Scenario notice:
