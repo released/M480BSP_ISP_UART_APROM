@@ -38,8 +38,8 @@ update @ 2021/09/22
 			
 				APROM_Bootloader.bin : 0x1E000 0x1000 (reserve 4K size , to store extra boot loader code 
 
-
 ![image](https://github.com/released/M480BSP_ISP_UART_APROM/blob/main/LDROM_KEIL_sct.jpg)
+
 
 	
 		- when power on , will check power on source (ex : power on reset , nReset , from application code)
